@@ -185,8 +185,8 @@ def train_dqn(episodes=300, use_forecast=True, seed=None):
             state = next_state
             ep_reward += r
 
-            if (ep + 1) % 50 == 0:
-                print("episode", ep + 1, "reward", ep_reward, "cost", info["total_cost"])
+        if (ep + 1) % 50 == 0:
+            print("episode", ep + 1, "reward", ep_reward, "cost", info["total_cost"])
 
     return agent
 
